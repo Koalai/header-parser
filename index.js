@@ -25,7 +25,7 @@ app.get('/api/hello', function (req, res) {
 });
 
 app.get('/api/whoami', (req, res) => {
-  const ip = req.headers["x-forwarded-for"]
+  const ipaddress = req.headers["x-forwarded-for"]
   const lang = req.headers["accept-language"]
   const software = req.headers["user-agent"]
 
